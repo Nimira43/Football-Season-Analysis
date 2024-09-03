@@ -11,14 +11,12 @@ const matches = fs_1.default.readFileSync('football.csv', {
     .map((row) => {
     return row.split(',');
 });
-// const homeWin = 'H'
-// const awayWin = 'A'
-// const draw = 'D'
-const MatchResult = {
-    HomeWin: 'H',
-    AwayWin: 'A',
-    Draw: 'D'
-};
+var MatchResult;
+(function (MatchResult) {
+    MatchResult["HomeWin"] = "H";
+    MatchResult["AwayWin"] = "A";
+    MatchResult["Draw"] = "D";
+})(MatchResult || (MatchResult = {}));
 let manUnitedWins = 0;
 for (let match of matches) {
     if (match[1] === 'Man United' && match[5] === MatchResult.HomeWin) {
