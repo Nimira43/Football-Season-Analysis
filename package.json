@@ -1,0 +1,15 @@
+{
+  "name": "football-season-analysis",
+  "version": "1.0.0",
+  "description": "App to perform data anaylsis from the 2018-19 Premier League season",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Rabone",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}
