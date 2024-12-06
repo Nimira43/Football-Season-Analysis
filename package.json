@@ -4,9 +4,7 @@
   "description": "App to perform data anaylsis from the 2018-19 Premier League season",
   "main": "index.js",
   "scripts": {
-    "start:build": "tsc -w",
-    "start:run": "nodemon build/index.js",
-    "start": "concurrently npm:start:*"
+    "start:build": "tsc -w -p tsconfig.json", "start:run": "nodemon build/index.js", "start": "concurrently \"npm run start:build\" \"npm run start:run\""
   },
   "author": "Nick Rabone",
   "license": "MIT",
