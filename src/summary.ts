@@ -4,3 +4,6 @@ export interface Analyser {
   run(matches: MatchData[]): string
 }
 
+export interface OutputTarget {
+  print(report: string): void
+}
