@@ -7,3 +7,12 @@ export interface Analyser {
 export interface OutputTarget {
   print(report: string): void
 }
+
+export class Summary {
+  constructor(
+    public analyser: Analyser, 
+    public outputTarget: OutputTarget
+  ) {
+
+  }
+}
