@@ -2,14 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const MatchReader_1 = require("./MatchReader");
 const CsvFileReader_1 = require("./CsvFileReader");
-// import { ConsoleReport } from './reportTargets/ConsoleReport'
-const WinsAnalysis_1 = require("./analysers/WinsAnalysis");
 const Summary_1 = require("./Summary");
-const HtmlReport_1 = require("./reportTargets/HtmlReport");
 const csvFileReader = new CsvFileReader_1.CsvFileReader('football.csv');
 const matchReader = new MatchReader_1.MatchReader(csvFileReader);
 matchReader.load();
-const summary = new Summary_1.Summary(new WinsAnalysis_1.WinsAnalysis('Man United'), 
-// new ConsoleReport()
-new HtmlReport_1.HtmlReport());
+const summary = Summary_1.Summary.winsAnalysisWithHtmlReport('Man United');
 summary.buildAndPrintReport(matchReader.matches);
