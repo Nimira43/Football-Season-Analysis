@@ -10,6 +10,7 @@
     "skipLibCheck": true                                 
   },
   "exclude": [ 
-    "archive" 
+    "archive",
+    "Version-1"
   ]
 }
