@@ -1,4 +1,4 @@
-import { Analyser } from '../summary'
+import { Analyser } from '../Summary'
 import { MatchData } from '../MatchData'
 import { MatchResult } from '../MatchResult'
 
